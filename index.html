@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LTT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Lenas Type tester</h1>
+        <label for="fontSelect">Wähle eine Schrift:</label>
+      <div class="dropdown-container">
+        <select id="fontSelect">
+            <option value="Nexum">Nexum</option>
+            <option value="Compoundry">Compoundry</option>
+        </select>
+      </div>
+        
+        <textarea id="textField" placeholder="Schreibe hier..."></textarea>
+        
+        <div class="controls">
+            <label for="colorPicker">Schriftfarbe:</label>
+            <input type="color" id="colorPicker" value="#000000">
+          
+            
+            <label for="fontSize">Font Size</label>
+            <input type="range" id="fontSize" name="fontSize" min="10" max="300" value="40" step="1">
+            <span id="fontSizeValue">40</span>
+        </div>
+        
+        <div id="variableControls">
+          <div class="axis-container">
+              <label for="axis1">Horizontal</label>
+              <input type="range" id="axis1" name="axis1" min="100" max="900" value="100" step="1">
+              <span id="axis1Value">100</span>
+          </div>
+          <div class="axis-container">
+              <label for="axis2">Vertical</label>
+              <input type="range" id="axis2" name="axis2" min="100" max="900" value="100" step="1">
+              <span id="axis2Value">100</span>
+          </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
